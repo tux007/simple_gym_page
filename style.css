@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.header-image {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.container {
+  position: absolute;
+  right: 32px;
+  left: 32px;
+  top: 16px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 16px;
+}
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  position: absolute;
+  left: 32px;
+  top: 16px;
+}
+.headline {
+  position: absolute;
+  left: 50px;
+  top: 300px;
+  font-size: 80px;
+  color: white;
+  width: 500px;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+}
+.yellow {
+  color: rgb(147, 147, 11);
+}
+.description-section {
+  height: 300px;
+  padding: 30px 100px;
+  display: flex;
+}
+.button {
+  background-color: rgb(147, 147, 11);
+  padding: 8px 30px;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.8);
+}
+.half-width {
+  width: 50%;
+  gap: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 45px;
+}
+.quater-width {
+  width: 25%;
+  gap: 50px;
+}
+.video-container {
+  width: 50%;
+}
+.youtube {
+  width: calc(100vw * 0.4);
+  height: calc(56.25vw * 0.4);
+}
+@media (max-width: 750px) {
+  .description-section {
+    flex-direction: column;
+    align-items: center;
+    height: unset;
+  }
+  .half-width {
+    width: unset;
+  }
+  .video-container {
+    width: unset;
+    display: flex;
+    justify-content: center;
+  }
+  .navigation {
+    display: none;
+  }
+}
